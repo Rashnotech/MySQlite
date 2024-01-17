@@ -1,0 +1,30 @@
+# Workflow for the sqlite compiler
+name: Lite Compiler CI / CD work flow
+on:
+  push:
+    branches:
+      - main
+  # run jobs base on the actions
+  jobs:
+    build:
+      # run test on linux operating system
+      runs-on: ubuntu-latest
+      # Installing the necessary environment (python)
+      steps:
+        - name: checkout repository code
+          uses: actions/checkout@v3
+        - name: set up python
+          uses: actions/setup-python@v2
+          with:
+            python-version: '3.8'
+
+        # Installing the necessary dependencies to run app.
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+
+        - name: Test models
+          run: |
+              pytest
+              python -m unittest discover tests/

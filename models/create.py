@@ -12,6 +12,6 @@ class Create:
         Return:
     """
 
-    def __init__(self, **stmt):
+    def __init__(self, **stmt: dict):
         """initialize / constructor"""
         pass
