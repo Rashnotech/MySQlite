@@ -2,7 +2,7 @@
 <header>
 
 
-_MySQLite is a python replica of the traditional SQLite that implements a small, fast, self-contained, high-relability database engine. This project is one of my very first individual C project and the purpose of choosing this project is improve my problem solving technique, coding skills and to better under the inner workings of SQL Engine. The motivation behind this project is how SQLite is built into mobile and most computers and other applications._
+_MySQLite is a python replica of the traditional SQLite that implements a small, fast, self-contained, high-relability database engine. This project is one of my very first individual Python project and the purpose of choosing this project is improve my problem solving technique, coding skills and to better under the inner workings of SQL Engine. The motivation behind this project is how SQLite is built into mobile and most computers and other applications._
 
 </header>
 
